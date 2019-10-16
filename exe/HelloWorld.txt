@@ -1,0 +1,17 @@
+describe("<HelloWorld />", () => {
+
+
+    it("should render a <HelloWorld /> component", () => {
+        const { container } = render(<HelloWorld />)
+        expect(container).toBeDefined();
+    });
+
+    it("should contain an H1 element ", () => {
+
+    });
+
+    it("should contain an H1 element with the text 'Hello World!' ", () => {
+    
+    });
+
+});

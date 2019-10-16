@@ -1,9 +1,7 @@
 import * as React from "react"
 import { Link } from "react-router-dom"
 
-interface HomeProps {}
-
-const Home: React.FunctionComponent<HomeProps> = () => {
+const Home = () => {
   const [state, setState] = React.useState(0)
 
   React.useEffect(() => {

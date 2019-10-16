@@ -8,7 +8,7 @@ const isDevelopment = process.env.NODE_ENV !== "production"
 
 const config = {
   entry: {
-    main: resolve("./src/index.tsx")
+    main: resolve("./src/index.jsx")
   },
   output: {
     filename: isDevelopment ? "[name].js" : "[name].[hash].js"
@@ -45,7 +45,12 @@ const config = {
       },
       {
         test: /\.(t|j)sx?$/,
-        loader: ["awesome-typescript-loader?module=es6"],
+        use: [
+					{
+						loader: "babel-loader",
+						options: { babelrc: true, cacheDirectory: true }
+					}
+				],
         exclude: [/node_modules/]
       },
       {

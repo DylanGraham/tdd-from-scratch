@@ -1,9 +1,8 @@
 import * as React from "react"
 import logo from "./logo.png"
 
-interface LayoutProps {}
 
-const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <main className="text-center">
       <a

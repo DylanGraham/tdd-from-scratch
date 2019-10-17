@@ -1,7 +1,6 @@
 import * as React from "react"
 import logo from "./logo.png"
 
-
 const Layout = ({ children }) => {
   return (
     <main className="text-center">

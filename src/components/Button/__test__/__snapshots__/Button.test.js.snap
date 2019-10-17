@@ -1,3 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render as default button 1`] = `<button />`;
+exports[`should render as default button 1`] = `
+<button
+  class="button-primary"
+/>
+`;
